@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auryxia Header</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body  oncontextmenu="return false" class="bg-gray-100 ">
+    <div id="cookie-banner" class="fixed bottom-0 w-full bg-gray-800 text-white p-4 flex justify-between items-center shadow-lg">
+        <p class="text-sm">
+            Our website uses cookies to improve usability. By using the website, you agree to the <a href="#" class="underline">Cookie Policy</a>.
+        </p>
+        <div class="flex gap-2">
+            <button onclick="acceptCookies()" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded">Accept Cookies</button>
+            <button onclick="closeBanner()" class="text-gray-400 hover:text-white">&times;</button>
+        </div>
+    </div>
+
+<!-- Fixed Header Wrapper -->
+<div class="sticky top-0 left-0 w-full bg-white shadow-md z-50">
+<!-- Top Navigation -->
+<div class="bg-gray-200 w-full">
+    <div class="max-w-[1440px] mx-auto flex justify-between items-center text-gray-600 text-sm px-4 md:px-16 py-2">
+        <!-- Mobile Menu Button -->
+        <button id="menuToggle" class="md:hidden text-gray-600">
+            ☰
+        </button>
+
+        <!-- Links (Hidden on mobile, visible when menu opens) -->
+        <div id="navLinks" class="hidden md:flex flex-col md:flex-row items-center text-center md:text-left gap-2 md:gap-2">
+            <a href="#" class="hover:underline">Important Safety Information</a>
+            <span class="hidden md:inline text-xs">|</span>
+            <a href="#" class="hover:underline">Full Prescribing Information</a>
+            <span class="hidden md:inline text-xs">|</span>
+            <a href="#" class="hover:underline">AkebiaCares</a>
+        </div>
+
+        <!-- Button -->
+        <button class="text-white text-xs py-1 rounded bg-[#5b6770] h-[34px] items-center px-[16px] font-semibold">
+            For Healthcare Professionals →
+        </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden bg-gray-100 p-4">
+        <a href="#" class="block py-1 hover:underline">Important Safety Information</a>
+        <a href="#" class="block py-1 hover:underline">Full Prescribing Information</a>
+        <a href="#" class="block py-1 hover:underline">AkebiaCares</a>
+    </div>
+</div>
+
+    <!-- Main Header -->
+    <div class="bg-white w-full">
+        <div class="max-w-[1440px] mx-auto flex justify-between items-center py-6 px-6 md:px-16">
+            <div>
+                <img class="w-[150px] h-auto" src="img/download.png" alt="">
+            </div>
+            <p class="text-gray-500 text-xs uppercase">FOR US RESIDENTS ONLY</p>
+        </div>
+    </div>
+</div>
+
+<!-- Content Placeholder to Avoid Overlapping -->
+<div class="flex justify-center items-center min-h-screen bg-gray-100 px-6 md:px-16 mt-[120px]">
+    <div class="text-center w-full max-w-4xl">
+        <h2 class="text-2xl font-bold mb-6 ">Choose a condition:</h2>
+        <div class="grid md:grid-cols-[1fr_auto_1fr] gap-6 items-start border-gray-300 pt-6">
+            <!-- Left Card -->
+            <div class="bg-white p-6 shadow-md rounded-lg border-t-4 border-orange-500 text-left">
+                <img src="img/m1.jpeg" alt="">
+                <h3 class="text-2xl font-bold text-orange-700 text-center leading-[40px] mb-[20px]">Hyperphosphatemia (HP) in Adults With Chronic Kidney Disease (CKD) Who Are on Dialysis</h3>
+                <p class="mt-2 text-gray-600 leading-[22px]">Explore a non-calcium, non-chewable treatment option for the control of serum phosphorus levels in adults with CKD on dialysis</p>
+                <a href="#" class="mt-4 inline-flex items-center justify-between bg-orange-600 
+                hover:bg-orange-700 py-4 px-10 text-white font-[750] uppercase w-full max-w-[380px]">
+                    <span class="flex-1 text-center">GO TO SITE</span>
+                    <span class="text-3xl">›</span>
+                </a>
+            </div>
+
+            <!-- Divider -->
+            <div class="flex justify-center items-center">
+                <div class=""></div>
+            </div>
+
+            <!-- Right Card -->
+            <div class="bg-white p-6 shadow-md rounded-lg border-t-4 border-blue-500 text-left">
+                <img src="img/m2.jpeg" alt="">
+                <h3 class="text-2xl font-bold text-blue-700 text-center leading-[40px] mb-[20px]">Iron Deficiency Anemia (IDA) in Adults With Chronic Kidney Disease (CKD) Who Are Not on Dialysis</h3>
+                <p class="mt-2 text-gray-600 leading-[22px]">Learn about the only oral iron tablet approved for the treatment of iron deficiency anemia in adults with CKD not on dialysis.</p>
+                <a href="#" class="mt-4 inline-flex items-center justify-between bg-blue-600 
+                hover:bg-blue-700 py-4 px-10 text-white font-[750] uppercase w-full max-w-[380px]">
+                    <span class="flex-1 text-center">GO TO SITE</span>
+                    <span class="text-3xl">›</span>
+                </a>
+            </div>
+        </div>
+        <div class="flex justify-center mt-6 max-w-[380px] mx-auto">
+            <img src="img/packaging-graphic.png" alt="Capsule Image" class="w-[400px]">
+        </div>        
+    </div>
+</div>
+
+<!-- Important Safety Information Section -->
+<div class="w-full bg-white shadow-md mt-[120px]">
+    <div class="max-w-[1440px] mx-auto p-6 md:px-16 rounded-lg">
+        <h2 class="text-lg font-bold text-gray-900">IMPORTANT SAFETY INFORMATION</h2>
+        <p class="text-gray-700 text-sm mt-1">
+            This information does not take the place of talking to your healthcare provider about your 
+            medical condition or treatment.
+        </p>
+
+        <h3 class="text-md font-bold text-gray-900 mt-4">
+            MANIFESTATION
+        </h3>
+        <p class="text-gray-700 text-sm mt-1">
+            Renesis is indicated for the treatment of adult patients with symptomatic anemia associated
+            with chronic kidney disease (CKD).
+        </p>
+
+        <h3 class="text-md font-bold text-gray-900 mt-4">WHAT IS RENESIS?</h3>
+        <p class="text-gray-700 text-sm mt-1">
+            Renesis is a frst-in-class, orally administered HIF-PH inhibitor that promotes erythropoiesis
+            through increasing endogenous production of erythropoietin, as well as improving iron
+            regulation and overcoming the EPO-suppressive efects of infammation on hemoglobin
+            syntheses and red blood cell production by downregulating hepcidin.
+            
+        </p>
+
+        <h3 class="text-md font-bold text-gray-900 mt-4">
+            PHARMACOLOGICAL MEDICINE:
+        </h3>
+        <p class="text-gray-700 text-sm mt-1">
+            Roxadustat is an orally bioavailable, hypoxia-inducible factor prolyl hydroxylase inhibitor (HIFPHI), with potential anti-anemic activity. Upon administration, roxadustat binds to and inhibits
+            HIF-PH, an enzyme responsible for the degradation of transcription factors in the HIF family under normal oxygen conditions. This prevents HIF breakdown and promotes HIF activity. Increased HIF activity leads to an increase in endogenous erythropoietin production, thereby 
+            enhancing erythropoiesis. It also reduces the expression of the peptide hormone hepcidin, improves iron availability, and boosts hemoglobin (Hb) levels. HIF regulates the expression of 
+            genes in response to reduced oxygen levels, including genes required for erythropoiesis and iron me abolism.
+        </p>
+        <p class="text-gray-700 text-sm mt-1">
+            Administration of roxadustat has been shown to induce coordinated erythropoiesis, increasing 
+            red blood cell count while maintaining plasma erythropoietin levels within or near normal 
+            physiologic range, in multiple subpopulations of CKD patients, including in the presence of 
+            infammation, and without a need for supplemental intravenous iron.
+        </p>
+        <p class="text-gray-700 text-sm mt-1">
+            Roxadustat reversibly binds to and potently inhibits hypoxia-inducible factor (HIF) prolyl
+            hydroxylase enzymes, reducing HIF-α breakdown and promoting HIF transcriptional activity.
+            Activation of the HIF pathway in this manner results in the induction of target genes involved in
+            erythropoiesis, such as those for EPO, EPO receptor, proteins promoting iron absorption, iron 
+        </p>
+        <p class="text-gray-700 text-sm mt-1">
+            transport and haem synthesis. Roxadustat dose-dependently increased haemoglobin (Hb)
+            levels, signifcantly reduced hepcidin levels and transiently increased endogenous EPO levels
+            within or near physiological range in patients with anemia of CKD who were not dialysis
+            dependent. Roxadustat reduced the dysregulation of iron metabolism associated with CKD by
+            increasing serum transferrin, intestinal iron absorption and the release of stored iron in a dosedependent manner in patients with anemia associated with dialysis dependent or dialysisindependent CKD. Cholesterol levels were also signifcantly reduced from baseline with
+            roxadustat, regardless of the use of statins or other lipid-lowering agents.            
+        </p>
+        <h3 class="text-md font-bold text-gray-900 mt-4">
+            Dosage & Administration
+        </h3>
+        <p class="text-gray-700 text-sm mt-1">
+            The appropriate dose of roxadustat must be taken orally three times per week and not on consecutive days. 
+            The dose should be individualized to achieve and maintain target Hb levels of 10 to 12 g/dL as described 
+            below:
+        </p>
+        <p class="text-gray-700 text-sm mt-1"> <b> Patients not on erythropoiesis-stimulating agent treatment: </b>
+           For adults, the usual starting dose is 50 mg three times weekly. The recommended starting dose of roxadustat is 70 mg three 
+           times per week in patients weighing less than 100 kg and 100 mg three times per week in patients weighing 100 kg and over.
+
+        </p>
+        <p class="text-gray-700 text-sm mt-1"> <b> Dose adjustment: </b>
+            When dose adjustments are required, increase or decrease the dose according to the "Dose increase/decrease table" and "stepwise Dose adjustment sequence" 
+            below. Once adjusted, maintain the dose level for ≥4 weeks. If the hemoglobin concentration 
+            increases rapidly (>2.0 g/dL) within 4 weeks of a dose increase, decrease the dose or suspend 
+            the treatment immediately.
+         </p>
+         <p class="text-gray-700 text-sm mt-1"> <b> The stepwise dose adjustments up or down should follow the sequence of the available
+            doses: </b>
+            20 mg-40 mg-50 mg-70 mg-100 mg-150 mg-200 mg-250 mg-300 mg-400 mg (only for CKD patients on dialysis).
+         </p>
+         <p class="text-gray-700 text-sm mt-1"> <b> Missed dose: </b>
+            When there is ≥ 24-hour interval until the next scheduled dosing time, take the
+            missed dose immediately and follow the prescribed schedule for subsequent doses. If there is
+            24 hours until the next scheduled dosing time, skip the missed dose, and take the next dose
+            as scheduled. Do not take 2 doses on the same day 
+         </p>
+         <p class="text-gray-700 text-sm mt-1"> <b> Method of administration: </b>
+            Roxadustat tablets are to be taken orally with or without food.
+         </p>
+    
+         <p class="text-gray-700 text-sm mt-1"> 
+            <a href="https://medex.com.bd/news/104/danger-of-taking-medication-without-doctors-advice"> 
+                *রেজিস্টার্ড জিজিৎসকিে পোমর্ডরমাতাকেি ঔষধ রসেন িরুন </a>
+         </p>
+
+        <h3 class="text-md font-bold text-gray-900 mt-4">
+            Interaction
+        </h3>
+        <p class="text-gray-700 text-sm mt-1">
+            Renesis in combination with other medications may have drug-drug interaction.
+        </p>
+        <p class="text-gray-700 text-sm mt-1">
+            Renesis with Phosphate binders and other products containing multivalent cation (EXCEPT) lanthanum carbonate:
+        </p>
+        <p class="text-gray-700 text-sm mt-1">
+            ▪ Risk: decreased Renesis AUC by 67% and 46% and Cmax by 66% and 52%
+            ▪ Recommendation: Renesis should be taken at least 1 hour after administration of 
+            phosphate binders or other medicinal products or supplements containing multivalent cations.
+        </p>
+        <p class="text-gray-700 text-sm mt-1">
+            Renesis with gemfbrozil (CYP2C8 and OATP1B1inhibitor) or probenecid (UGT and OAT1/OAT3 inhibitor)
+        </p>
+        <p class="text-gray-700 text-sm mt-1">
+            ▪ Risk: increased Renesis AUC by 2.3- fold and Cmax by 1.4-fold
+            ▪ Recommendation: Adjust the dose of Renesis following dose adjustment rules based on Hb monitoring
+        </p>
+        <p class="text-gray-700 text-sm mt-1">
+            Renesis with OATP1B1 or BCRP Substrates (simvastatin, rosuvastatin & atorvastatin)
+        </p>
+        <p class="text-gray-700 text-sm mt-1">
+            ▪ Risk: Risk: AUC and Cmax increased
+            ▪ Recommendation:  Adjust the dose of Renesis following dose adjustment rules based on
+            Hb monitoring.
+        </p>
+        <h3 class="text-md font-bold text-gray-900 mt-4">
+            Side Effects
+        </h3>
+        <p class="text-gray-700 text-sm mt-1">
+            The common adverse reactions associated with Renesis are hypertension, vascular access thrombosis, 
+            diarrhoea, peripheral oedema, hyperkalaemia and nausea.
+        </p>
+        <h3 class="text-md font-bold text-gray-900 mt-4">
+            Pregnancy & Lactation
+        </h3>
+        <p class="text-gray-700 text-sm mt-1">
+            Do not administered to women that may be pregnant or pregnant. Roxadustat is contraindicated during 
+            breast-feeding.
+        </p>
+        <h3 class="text-md font-bold text-gray-900 mt-4">
+            Precautions & Warnings
+        </h3>
+        <p class="text-gray-700 text-sm mt-1">
+            Renesis tablets should be used in caution. It may initiate few thrombotic vascular events (TVEs) particularly in patients with pre-existing risk factors for TVE, including obesity and prior history 
+            of TVEs. Renesis should be used with caution in patients with a history of seizures. Renesis 
+            should not be administered if the patient has serious signs and symptoms of an infection. 
+            Renesis should not be administered if the patient has liver disorder. Renesis should not be 
+            initiated in pregnant women.
+        </p>
+        <h3 class="text-md font-bold text-gray-900 mt-4">
+            Use in Special Populations
+        </h3>
+        <p class="text-gray-700 text-sm mt-1">
+            <b>Children:</b> Renesis is not indicated in children.
+        </p>
+        <p class="text-gray-700 text-sm mt-1">
+            <b>liver dysfunction patients:</b> Renesis is not recommended for use in patients with severe
+            hepatic impairment
+        </p>
+        <h3 class="text-md font-bold text-gray-900 mt-4">
+            Overdose Effects
+        </h3>
+        <p class="text-gray-700 text-sm mt-1">
+            <b>Symptoms:</b> When Renesis was administered 5 mg/kg (510 mg) to a single healthy adult,
+            increased heart rate transient have been reported. Hemoglobin concentration by overdosage
+            of Renesis is likely to increase more than necessary.            
+        </p>
+        <p class="text-gray-700 text-sm mt-1">
+            <b>Treatment:</b> Appropriate measures of dose reduction or interruption, etc. of Renesis. Renesis is
+            not removed by dialysis.           
+        </p>
+        <h3 class="text-md font-bold text-gray-900 mt-4">
+            Therapeutic Class
+        </h3>
+        <p class="text-gray-700 text-sm mt-1">
+            Drugs for Haemolytic Hypoplastic & Renal Anemia.            
+        </p>
+        <h3 class="text-md font-bold text-gray-900 mt-4">
+            Storage Conditions
+        </h3>
+        <p class="text-gray-700 text-sm mt-1">
+            Store in a cool (below 30°C), dry place, away from light and moisture. Keep out of the reach of children.         
+        </p>
+        
+    </div>
+</div>
+
+<footer class="bg-white text-gray-800 text-center py-4 border-t">
+    <div class="container mx-auto">
+        <nav class="flex flex-wrap justify-center gap-4 text-sm font-semibold text-teal-700">
+            <a href="#" class="hover:underline">CONTACT US</a>
+            <a href="#" class="hover:underline">TERMS html Copy Edit
+            <a href="#" class="hover:underline">TERMS AND CONDITIONS</a>
+            <a href="#" class="hover:underline">PRIVACY POLICY</a>
+            <a href="#" class="hover:underline">AKEBIA.COM</a>
+            <a href="#" class="hover:underline">SITE MAP</a>
+            <a href="#" class="hover:underline">ACCESSIBILITY STATEMENT</a>
+        </nav>
+        <p class="text-xs text-gray-600 mt-2">
+            ©2024 Akebia Therapeutics, Inc. PP-AUR-US-0892 (v4.0) 11/2024
+        </p>
+        <div class="mt-2">
+            <span class="text-teal-700 font-bold text-lg">Akebia</span>
+            <span class="text-gray-500 text-sm">THERAPEUTICS</span>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
